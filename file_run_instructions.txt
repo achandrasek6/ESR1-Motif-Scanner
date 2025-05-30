@@ -1,0 +1,4 @@
+1. Place all files in the same directory
+2. Using linux command line, set esr1_motif_scan.py to executable via the command: "chmod +x esr1_motif_scan.py"
+3. Now run python3 "esr1_motif_scan.py esr1_profile.txt GREB1.fasta > GREB1_output.tsv" on the command line for GREB1 output
+4. Likewise run python3 esr1_motif_scan.py esr1_profile.txt ADAM6.fasta > ADAM6_output.tsv for ADAM6 output
