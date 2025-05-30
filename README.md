@@ -41,7 +41,7 @@ Genomic intervals spanning ±100 kb around each gene’s transcriptional unit we
 ## Prerequisites
 
 - **Python 3** (no external packages required; uses only the standard library: `argparse`, `math`, `sys`).
-- Unix-style shell (Linux, macOS, or WSL on Windows).
+- **Unix-style shell** (Linux, macOS, or WSL on Windows).
 
 ---
 
