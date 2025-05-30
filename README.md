@@ -1,8 +1,24 @@
-# PWM Motif Scanner
+# ESR1-Motif-Scanner
 
-A command-line Python tool to scan DNA sequences against PWM motifs, reporting log-odds scores for each window.
+This tool scans any input DNA sequence with a user-provided position weight matrix for the ESR1-binding motif, computing and reporting log-odds scores for each 15-mer window on both strands along with the highest-scoring strand at each position.
 
 _Rapid identification of ESR1‐binding motif occurrences in genomic sequences is enabled by this tool, thereby facilitating investigation of estrogen receptor‐mediated transcriptional regulation with implications for breast cancer research and other hormone‐responsive clinical applications._
+
+---
+
+## Background Information
+### Estrogen Receptor 1 (ESR1)
+
+The ESR1 gene encodes estrogen receptor α, a ligand-activated transcription factor that mediates the effects of estrogens in a variety of tissues. Upon binding 17β-estradiol, ESR1 undergoes dimerization and recognizes specific 15-base-pair estrogen response elements (EREs) in DNA, recruiting co-activator complexes to modulate transcription of downstream target genes (Smith, Nawaz, & O’Malley, 1994). Aberrant ESR1 signaling is observed in hormone-responsive breast cancers, where ESR1-driven gene expression programs contribute to increased proliferation and survival (Ali & Coombes, 2000).
+
+### Selected Target Genes
+Two established ESR1 targets—GREB1 and ADAM6—were examined:
+
+- GREB1 (Growth Regulation by Estrogen in Breast Cancer 1) is an early estrogen-responsive gene whose expression correlates with estrogen-driven cell proliferation in breast and ovarian tissues. Multiple high-affinity EREs within the GREB1 promoter render it a sensitive indicator of ESR1 activity (Carroll et al., 2006).
+
+- ADAM6 belongs to the “A Disintegrin And Metalloproteinase” family. Although less extensively characterized, ADAM6 transcription has been shown to be upregulated by estrogen in certain breast cancer cell lines, and its proteolytic activity may influence remodeling of the tumor microenvironment (McCulloch & Birkedal-Hansen, 2001).
+
+Genomic intervals spanning ±100 kb around each gene’s transcriptional unit were scanned using the esr1_motif_scan.py script. Both forward and reverse strands were interrogated for canonical and variant EREs. The output columns—`fwd_score`, `rev_score`, and `best_score`—provide log-odds enrichment metrics for each 15-mer window, thereby enabling prioritization of candidate regulatory elements for subsequent experimental validation.
 
 ---
 
@@ -68,20 +84,6 @@ See `file_run_instructions.txt` for a minimal step-by-step guide to reproduce ou
 - `strand`: “+” if forward is higher, “–” if reverse is higher
 
 ---
-
-## Supplementary Information
-### Estrogen Receptor 1 (ESR1)
-
-The ESR1 gene encodes estrogen receptor α, a ligand-activated transcription factor that mediates the effects of estrogens in a variety of tissues. Upon binding 17β-estradiol, ESR1 undergoes dimerization and recognizes specific 15-base-pair estrogen response elements (EREs) in DNA, recruiting co-activator complexes to modulate transcription of downstream target genes (Smith, Nawaz, & O’Malley, 1994). Aberrant ESR1 signaling is observed in hormone-responsive breast cancers, where ESR1-driven gene expression programs contribute to increased proliferation and survival (Ali & Coombes, 2000).
-
-### Selected Target Genes
-Two established ESR1 targets—GREB1 and ADAM6—were examined:
-
-- GREB1 (Growth Regulation by Estrogen in Breast Cancer 1) is an early estrogen-responsive gene whose expression correlates with estrogen-driven cell proliferation in breast and ovarian tissues. Multiple high-affinity EREs within the GREB1 promoter render it a sensitive indicator of ESR1 activity (Carroll et al., 2006).
-
-- ADAM6 belongs to the “A Disintegrin And Metalloproteinase” family. Although less extensively characterized, ADAM6 transcription has been shown to be upregulated by estrogen in certain breast cancer cell lines, and its proteolytic activity may influence remodeling of the tumor microenvironment (McCulloch & Birkedal-Hansen, 2001).
-
-Genomic intervals spanning ±100 kb around each gene’s transcriptional unit were scanned using the esr1_motif_scan.py script. Both forward and reverse strands were interrogated for canonical and variant EREs. The output columns—fwd_score, rev_score, and best_score—provide log-odds enrichment metrics for each 15-mer window, thereby enabling prioritization of candidate regulatory elements for subsequent experimental validation.
 
 ## References
 
