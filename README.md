@@ -87,13 +87,13 @@ See `file_run_instructions.txt` for a minimal step-by-step guide to reproduce ou
 
 ## References
 
-Ali, S., & Coombes, R. C. (2000). Estrogen receptor alpha in human breast cancer: occurrence and significance. Journal of Mammary Gland Biology and Neoplasia, 5(3), 271–281.
+1. Ali, S., & Coombes, R. C. (2000). Estrogen receptor alpha in human breast cancer: occurrence and significance. Journal of Mammary Gland Biology and Neoplasia, 5(3), 271–281.
 
-Carroll, J. S., Liu, X. S., Brodsky, A. S., Li, W., Meyer, C. A., Szary, A. J., … Brown, M. (2005). Chromosome-wide mapping of estrogen receptor binding reveals long-range regulation requiring the forkhead protein FOXA1. Cell, 122(1), 33–43.
+2. Carroll, J. S., Liu, X. S., Brodsky, A. S., Li, W., Meyer, C. A., Szary, A. J., … Brown, M. (2005). Chromosome-wide mapping of estrogen receptor binding reveals long-range regulation requiring the forkhead protein FOXA1. Cell, 122(1), 33–43.
 
-McCulloch, D. R., & Birkedal-Hansen, H. (2001). Structures of metalloproteinases reflect their functions. Matrix Biology, 19(2), 101–112.
+3. McCulloch, D. R., & Birkedal-Hansen, H. (2001). Structures of metalloproteinases reflect their functions. Matrix Biology, 19(2), 101–112.
 
-Smith, C. L., Nawaz, Z., & O’Malley, B. W. (1994). Coactivation of steroid hormone receptors: biological and molecular aspects. Endocrine Reviews, 15(3), 203–211.
+4. Smith, C. L., Nawaz, Z., & O’Malley, B. W. (1994). Coactivation of steroid hormone receptors: biological and molecular aspects. Endocrine Reviews, 15(3), 203–211.
 
 
 
