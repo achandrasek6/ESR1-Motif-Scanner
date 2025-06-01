@@ -62,7 +62,13 @@ Genomic intervals spanning ±100 kb around each gene’s transcriptional unit we
    
        ./esr1_motif_scan.py esr1_profile.txt GREB1.fasta --bg 0.30 0.20 0.20 0.30 > GREB1_output.tsv
    where the `--bg` flag takes four floats (A C G T).
+5. **Modularity**
 
+   This application may be used to scan for potential motifs in other receptor-binding domain interactions between other proteins. 
+
+       ./esr1_motif_scan.py receptor_motif_profile.txt target_gene.fasta > target_gene_output.tsv
+   
+   where `receptor_motif_profile.txt` refers to the PWM for a given receptor, `target_gene.fasta` is the selected genetic sequence corresponding to the target protein, and `target_gene_output.tsv` is the log-odds output file.
 ---
 
 ## File Run Instructions
